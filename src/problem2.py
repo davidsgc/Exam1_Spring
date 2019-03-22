@@ -59,7 +59,7 @@ def test_problem2():
     print('Test case 1 Actual: ')
     problem3(string_of_characters)
     print('*********************************************')
-    # TODO: 2. Write at least three reasonable test cases below.
+    # DONE: 2. Write at least three reasonable test cases below.
     #         Three excellent test cases are worth 10 points
 
     print('*********************************************')
@@ -152,7 +152,7 @@ def problem3(string_of_characters):
        Reversed string: b21a
        The user entered a normal string
     """
-    # TODO: 3. Implement this function.
+    # DONE: 3. Implement this function.
     # To implement this function, you need to reverse a string.
     # If you write your own method to reverse a string and solve
     # the entire problem, you will get 25 points. If you use the
@@ -167,7 +167,9 @@ def problem3(string_of_characters):
             count_alph = count_alph + 1
     print('Number of alphabetic characters:', count_alph)
     print('Number of digits:', count_int)
-    new_string = reverseString(string_of_characters)
+    new_string = ''
+    for k in range(len(string_of_characters) - 1, -1, -1):
+        new_string= new_string + string_of_characters[k]
     print('Reversed string is:', new_string)
     if new_string == string_of_characters:
         print('The user entered a palindrome.')

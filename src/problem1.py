@@ -139,7 +139,7 @@ class Elevator(object):
 
 
 # ---------------------------------------------------------------------
-#     TODO: 6. Implement the get_passengers method. (3 pts)
+#     DONE: 6. Implement the get_passengers method. (3 pts)
 #     Write the testing code (below) before writing this function.
 # ---------------------------------------------------------------------
 # ---------------------------------------------------------------------
