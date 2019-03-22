@@ -161,7 +161,7 @@ def problem3(string_of_characters):
     count_int = 0
     print('Length of string:', len(string_of_characters))
     for k in range(len(string_of_characters)):
-        if string_of_characters[k] == type(int):
+        if type(string_of_characters[k]) is int:
             count_int = count_int + 1
         elif string_of_characters[k].isalpha() is True:
             count_alph = count_alph + 1
